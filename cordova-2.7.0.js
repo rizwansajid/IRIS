@@ -1146,7 +1146,7 @@ module.exports = {
         // Let native code know we are all done on the JS side.
         // Native code will then un-hide the WebView.
         channel.join(function() {
-            exec(null, null, "App", "show", []);
+           // exec(null, null, "App", "show", []);
         }, [channel.onCordovaReady]);
     }
 };
@@ -5104,7 +5104,7 @@ function Device() {
  */
 Device.prototype.getInfo = function(successCallback, errorCallback) {
     argscheck.checkArgs('fF', 'Device.getInfo', arguments);
-    exec(successCallback, errorCallback, "Device", "getDeviceInfo", []);
+    //exec(successCallback, errorCallback, "Device", "getDeviceInfo", []);
 };
 
 module.exports = new Device();
@@ -6176,7 +6176,7 @@ function NetworkConnection() {
  * @param {Function} errorCallback The function to call when there is an error getting the Connection data. (OPTIONAL)
  */
 NetworkConnection.prototype.getInfo = function(successCallback, errorCallback) {
-    exec(successCallback, errorCallback, "NetworkStatus", "getConnectionInfo", []);
+    //exec(successCallback, errorCallback, "NetworkStatus", "getConnectionInfo", []);
 };
 
 var me = new NetworkConnection();
