@@ -28,6 +28,7 @@
                 window.location = "MediaLibrary.html?id=" + userId + "&username=" + userName + "&Email=" + Email + "";
             });
             $("#btnSelectMedia").click(function () {
+                alert("select media");
                 navigator.camera.getPicture(GetFileName,
                                          function (message) { alert('get Media failed'); },
                                          {
