@@ -148,6 +148,7 @@
                         alert("success");
                         if (response != null && response != "") {
                             var prods = response.d;
+                            alert(prods)
                             if (prods == "Done") {
                              $("#loader").css("display", "none");
                                 alert("Media Content has been Uploaded successfully.");
@@ -168,6 +169,7 @@
                         }
                     },
                     error: function (e) {
+                        alert("error");
                         $("#Something").html("There was an error retrieving records." + "Error Description:  " + e.d);
                     }
 
