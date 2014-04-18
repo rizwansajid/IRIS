@@ -78,11 +78,11 @@
          var userId = getUrlVars()["id"];
          var Email = getUrlVars()["Email"];
           var userName = getUrlVars()["username"];
-            alert("get in save");
+            //alert("get in save");
             var MediaUrl = document.getElementById('MediaURL').innerHTML;
             var MediaName= MediaUrl.substr(MediaUrl.lastIndexOf('/')+1);
             // var MediaName= "10004056_662622410466351_1958423388_n.jpg";
-          alert(MediaName);
+          //alert(MediaName);
           //  alert($('#txtDescription').val());
           //  alert($('#txtFriendsEmail').val());
             if (cbShareMedia.checked) {
@@ -134,7 +134,7 @@
                 var userId = getUrlVars()["id"];
                 var Email = getUrlVars()["Email"];
                // alert(userId);
-                alert(MediaName);
+                //alert(MediaName);
                // alert(Email);
                 $.ajax({
                     type: "POST",
@@ -148,7 +148,7 @@
                         alert("success");
                         if (response != null && response != "") {
                             var prods = response.d;
-                            alert(prods);
+                           // alert(prods);
                             if (prods == "Done") {
                              $("#loader").css("display", "none");
                                 alert("Media Content has been Uploaded successfully.");
