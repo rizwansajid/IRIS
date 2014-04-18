@@ -154,14 +154,11 @@
                                 alert("Media Content has been Uploaded successfully.");
                                 window.location = "MediaLibrary.html?id=" + userId + "&username=" + userName + "&Email=" + Email + "";
                             }
-                            if (prods == "Email Not Found") {
+                            else (prods == "Email Not Found") {
                              $("#loader").css("display", "none");
                                 alert("Email Id DoesNot Existx in IRIS Users");
                             }
-                            else
-                            {
-                                alert("something wrong");
-                            }
+                            
                         }
                         else {
                             alert("No data to display");
