@@ -86,7 +86,8 @@ body
 	padding:0px 0px 20px 0px;
 	background:#FFF;
 	width:95%;
-	height:auto;	
+	height:auto;
+    opacity:1;	
 }
 
 .LoginArea .loginTxt
