@@ -51,7 +51,7 @@
             });
             $("#btnSubmitFile").click(function () {
                 alert("1");
-                $("#loader").css("display", "block");
+                //$("#loader").css("display", "block");
                var MediaUrl = document.getElementById('MediaURL').innerHTML;
                 alert(MediaUrl);
                 uploadPhoto(MediaUrl);
@@ -196,7 +196,7 @@
         }
           function uploadPhoto(imageURI) {
        
-         alert(imageURI);
+         //alert(imageURI);
            var options = new FileUploadOptions(); 
             options.fileKey="recFile"; 
             var imagefilename = imageURI.substr(imageURI.lastIndexOf('/')+1); 
@@ -221,7 +221,7 @@ function win(r) {
         } 
 
         function fail(error) { 
-         $("#loader").css("display", "none");
+         //$("#loader").css("display", "none");
             alert("An error has occurred: Code = " + error.code); 
         } 
          function Test() {
