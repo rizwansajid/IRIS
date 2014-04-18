@@ -1218,7 +1218,7 @@ cameraExport.getPicture = function(successCallback, errorCallback, options) {
 };
 
 cameraExport.cleanup = function(successCallback, errorCallback) {
-    exec(successCallback, errorCallback, "Camera", "cleanup", []);
+    //exec(successCallback, errorCallback, "Camera", "cleanup", []);
 };
 
 module.exports = cameraExport;
