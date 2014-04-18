@@ -50,10 +50,10 @@
                 }
             });
             $("#btnSubmitFile").click(function () {
-                alert("1");
-                //$("#loader").css("display", "block");
+                //alert("1");
+                $("#loader").css("display", "block");
                var MediaUrl = document.getElementById('MediaURL').innerHTML;
-                alert(MediaUrl);
+                //alert(MediaUrl);
                 uploadPhoto(MediaUrl);
             //  Test();
             //  SaveMedia();
@@ -210,7 +210,8 @@
             options.params = params; 
 
             var ft = new FileTransfer(); 
-            ft.upload(imageURI, "http://iris.reportninja.org/WebServices/UploadMediaMobile.asmx/UploadMedia", win, fail, options, true); 
+              //ft.upload(imageURI, "http://iris.reportninja.org/WebServices/UploadMediaMobile.asmx/UploadMedia", win, fail, options, true); 
+            ft.upload(imageURI, encodeURI("http://iris.reportninja.org/WebServices/UploadMediaMobile.asmx/UploadMedia"), win, fail, options);
         } 
 
 function win(r) { 
@@ -221,7 +222,7 @@ function win(r) {
         } 
 
         function fail(error) { 
-         //$("#loader").css("display", "none");
+         $("#loader").css("display", "none");
             alert("An error has occurred: Code = " + error.code); 
         } 
          function Test() {
