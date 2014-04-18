@@ -28,7 +28,7 @@
                 window.location = "MediaLibrary.html?id=" + userId + "&username=" + userName + "&Email=" + Email + "";
             });
             $("#btnSelectMedia").click(function () {
-                alert("select media");
+                //alert("select media");
                 navigator.camera.getPicture(GetFileName,
                                          function (message) { alert('get Media failed'); },
                                          {
@@ -50,10 +50,10 @@
                 }
             });
             $("#btnSubmitFile").click(function () {
-               // alert("1");
+                alert("1");
                 $("#loader").css("display", "block");
                var MediaUrl = document.getElementById('MediaURL').innerHTML;
-               // alert(MediaUrl);
+                alert(MediaUrl);
                 uploadPhoto(MediaUrl);
             //  Test();
             //  SaveMedia();
@@ -196,7 +196,7 @@
         }
           function uploadPhoto(imageURI) {
        
-      //  alert(imageURI);
+         alert(imageURI);
            var options = new FileUploadOptions(); 
             options.fileKey="recFile"; 
             var imagefilename = imageURI.substr(imageURI.lastIndexOf('/')+1); 
