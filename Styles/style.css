@@ -337,3 +337,25 @@ input:-moz-placeholder {
  .buttonDiv {
             /*float: left;*/
         }
+ .btnDownload {
+	-moz-box-shadow:inset 0px 1px 1px 0px #bee2f9;
+	-webkit-box-shadow:inset 0px 1px 1px 0px #bee2f9;
+	box-shadow:inset 0px 1px 1px 0px #bee2f9;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #63b8ee), color-stop(1, #468ccf) );
+	background:-moz-linear-gradient( center top, #63b8ee 5%, #468ccf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#63b8ee', endColorstr='#468ccf');
+	background-color:#63b8ee;
+	border:1px solid #3866a3;
+	display:inline-block;
+	color:#14396a;
+	font-family:Arial;
+	font-size:14px;
+	font-weight:bold;
+	font-style:normal;
+	height:65px;
+	line-height:65px;
+	width:131px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:0px 0px 0px #7cacde;
+}
