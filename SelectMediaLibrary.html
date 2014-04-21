@@ -21,7 +21,7 @@
             var userId = getUrlVars()["id"];
             var userName = getUrlVars()["username"];
             var Email = getUrlVars()["Email"];
-            alert(Email);
+            //alert(Email);
            
            // var MLID = getUrlVars()["MLID"];
            // var ImageName = getUrlVars()["ImageName"];
@@ -52,10 +52,10 @@
                 }
             });
             $("#btnSubmitFile").click(function () {
-                alert("1");
+                //alert("1");
                 $("#loader").css("display", "block");
                var MediaUrl = document.getElementById('MediaURL').innerHTML;
-                alert(MediaUrl);
+                //alert(MediaUrl);
                 uploadPhoto(MediaUrl);
             //  Test();
             //  SaveMedia();
@@ -79,9 +79,9 @@
          function SaveMedia() {
          var userId = getUrlVars()["id"];
          var Email = getUrlVars()["Email"];
-         alert(Email);
+         //alert(Email);
           var userName = getUrlVars()["username"];
-            alert("get in save");
+            //alert("get in save");
             var MediaUrl = document.getElementById('MediaURL').innerHTML;
             var MediaName= MediaUrl.substr(MediaUrl.lastIndexOf('/')+1);
             // var MediaName= "10004056_662622410466351_1958423388_n.jpg";
@@ -130,15 +130,15 @@
             }
             else {
 
-                alert("else");
+                //alert("else");
                // var MediaUrl = document.getElementById('MediaURL').innerHTML;
                // var MediaName= MediaUrl.substr(MediaUrl.lastIndexOf('/')+1);
               //  var name = "BACK.PNG";
                 var userId = getUrlVars()["id"];
                 var Email = getUrlVars()["Email"];
-                alert(userId);
+                //alert(userId);
                 //alert(MediaName);
-                alert(Email);
+                //alert(Email);
                 $.ajax({
                     type: "POST",
                       url: "http://iris.reportninja.org/webservices/uploadmediamobile.asmx/UploadFileInOwnLibrary",
@@ -147,11 +147,11 @@
                     data: "{'UserId': '" + userId + "','FileName':'" + MediaName + "','Description':'" + $('#txtDescription').val() + "','Email':'" + Email + "'}",
                     contentType: "application/json; charset=utf-8",
                     dataType: "json",
-                    success: function (response) {
+                    //success: function (response) {
                         alert("success");
                         if (response != null && response != "") {
                             var prods = response.d;
-                            alert(prods);
+                            //alert(prods);
                             if (prods == "Done") {
                              $("#loader").css("display", "none");
                                 alert("Media Content has been Uploaded successfully.");
