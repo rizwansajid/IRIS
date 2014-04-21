@@ -78,7 +78,7 @@
          var userId = getUrlVars()["id"];
          var Email = getUrlVars()["Email"];
           var userName = getUrlVars()["username"];
-            //alert("get in save");
+            alert("get in save");
             var MediaUrl = document.getElementById('MediaURL').innerHTML;
             var MediaName= MediaUrl.substr(MediaUrl.lastIndexOf('/')+1);
             // var MediaName= "10004056_662622410466351_1958423388_n.jpg";
@@ -127,7 +127,7 @@
             }
             else {
 
-                //alert("else");
+                alert("else");
                // var MediaUrl = document.getElementById('MediaURL').innerHTML;
                // var MediaName= MediaUrl.substr(MediaUrl.lastIndexOf('/')+1);
               //  var name = "BACK.PNG";
@@ -145,10 +145,10 @@
                     contentType: "application/json; charset=utf-8",
                     dataType: "json",
                     success: function (response) {
-                        //alert("success");
+                        alert("success");
                         if (response != null && response != "") {
                             var prods = response.d;
-                           // alert(prods);
+                            alert(prods);
                             if (prods == "Done") {
                              $("#loader").css("display", "none");
                                 alert("Media Content has been Uploaded successfully.");
