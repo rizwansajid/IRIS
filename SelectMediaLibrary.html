@@ -133,9 +133,9 @@
               //  var name = "BACK.PNG";
                 var userId = getUrlVars()["id"];
                 var Email = getUrlVars()["Email"];
-                //alert(userId);
+                alert(userId);
                 //alert(MediaName);
-                //alert(Email);
+                alert(Email);
                 $.ajax({
                     type: "POST",
                       url: "http://iris.reportninja.org/webservices/uploadmediamobile.asmx/UploadFileInOwnLibrary",
@@ -148,7 +148,7 @@
                         alert("success");
                         if (response != null && response != "") {
                             var prods = response.d;
-                           // alert(prods);
+                            alert(prods);
                             if (prods == "Done") {
                              $("#loader").css("display", "none");
                                 alert("Media Content has been Uploaded successfully.");
