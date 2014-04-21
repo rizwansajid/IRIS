@@ -21,6 +21,8 @@
             var userId = getUrlVars()["id"];
             var userName = getUrlVars()["username"];
             var Email = getUrlVars()["Email"];
+            alert(Email);
+           
            // var MLID = getUrlVars()["MLID"];
            // var ImageName = getUrlVars()["ImageName"];
             $("#btnBack").click(function () {
@@ -77,6 +79,7 @@
          function SaveMedia() {
          var userId = getUrlVars()["id"];
          var Email = getUrlVars()["Email"];
+         alert(Email);
           var userName = getUrlVars()["username"];
             alert("get in save");
             var MediaUrl = document.getElementById('MediaURL').innerHTML;
