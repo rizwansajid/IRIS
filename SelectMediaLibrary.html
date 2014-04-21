@@ -89,7 +89,7 @@
                // alert("checked");
                 $.ajax({
                     type: "POST",
-                      url: "http://iris.reportninja.org/webservices/uploadmediamobile.asmx/UploadMediaOnFriendsLibrary",
+                      url: "http://iris.reportninja.org/webservices/UploadMediaMobile.asmx/UploadMediaOnFriendsLibrary",
                  //   url: "UploadMediaFromMobile.asmx/UploadMediaOnFriendsLibrary",
                     //data: "{'id': '" + Id + "'}",
                     data: "{'FileName': '" + MediaName + "','Description':'" + $('#txtDescription').val() + "','FriendsEmail':'" + $('#txtFriendsEmail').val() + "'}",
@@ -133,12 +133,12 @@
               //  var name = "BACK.PNG";
                 var userId = getUrlVars()["id"];
                 var Email = getUrlVars()["Email"];
-               // alert(userId);
+                alert(userId);
                 //alert(MediaName);
-               // alert(Email);
+                alert(Email);
                 $.ajax({
                     type: "POST",
-                      url: "http://iris.reportninja.org/webservices/uploadmediamobile.asmx/UploadFileInOwnLibrary",
+                    url: "http://iris.reportninja.org/webservices/UploadMediaMobile.asmx/UploadFileInOwnLibrary",
                     //url: "UploadMediaFromMobile.asmx/UploadMediaOnFriendsLibrary",
                     //data: "{'id': '" + Id + "'}",
                     data: "{'UserId': '" + userId + "','FileName':'" + MediaName + "','Description':'" + $('#txtDescription').val() + "','Email':'" + Email + "'}",
@@ -213,8 +213,8 @@
             options.params = params; 
 
             var ft = new FileTransfer(); 
-              ft.upload(imageURI, "http://iris.reportninja.org/WebServices/UploadMediaMobile.asmx/UploadMedia", win, fail, options, true); 
-            //ft.upload(imageURI, encodeURI("http://iris.reportninja.org/WebServices/UploadMediaMobile.asmx/UploadMedia"), win, fail, options);
+              //ft.upload(imageURI, "http://iris.reportninja.org/WebServices/UploadMediaMobile.asmx/UploadMedia", win, fail, options, true); 
+            ft.upload(imageURI, encodeURI("http://iris.reportninja.org/WebServices/UploadMediaMobile.asmx/UploadMedia"), win, fail, options);
         } 
 
 function win(r) { 
