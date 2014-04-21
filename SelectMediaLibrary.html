@@ -78,7 +78,7 @@
          var userId = getUrlVars()["id"];
          var Email = getUrlVars()["Email"];
           var userName = getUrlVars()["username"];
-            alert("get in save");
+            //alert("get in save");
             var MediaUrl = document.getElementById('MediaURL').innerHTML;
             var MediaName= MediaUrl.substr(MediaUrl.lastIndexOf('/')+1);
             // var MediaName= "10004056_662622410466351_1958423388_n.jpg";
@@ -89,7 +89,7 @@
                // alert("checked");
                 $.ajax({
                     type: "POST",
-                      url: "http://iris.reportninja.org/webservices/UploadMediaMobile.asmx/UploadMediaOnFriendsLibrary",
+                      url: "http://iris.reportninja.org/webservices/uploadmediamobile.asmx/UploadMediaOnFriendsLibrary",
                  //   url: "UploadMediaFromMobile.asmx/UploadMediaOnFriendsLibrary",
                     //data: "{'id': '" + Id + "'}",
                     data: "{'FileName': '" + MediaName + "','Description':'" + $('#txtDescription').val() + "','FriendsEmail':'" + $('#txtFriendsEmail').val() + "'}",
@@ -127,28 +127,28 @@
             }
             else {
 
-                alert("else");
+                //alert("else");
                // var MediaUrl = document.getElementById('MediaURL').innerHTML;
                // var MediaName= MediaUrl.substr(MediaUrl.lastIndexOf('/')+1);
               //  var name = "BACK.PNG";
                 var userId = getUrlVars()["id"];
                 var Email = getUrlVars()["Email"];
-                alert(userId);
+               // alert(userId);
                 //alert(MediaName);
-                alert(Email);
+               // alert(Email);
                 $.ajax({
                     type: "POST",
-                    url: "http://iris.reportninja.org/webservices/UploadMediaMobile.asmx/UploadFileInOwnLibrary",
+                      url: "http://iris.reportninja.org/webservices/uploadmediamobile.asmx/UploadFileInOwnLibrary",
                     //url: "UploadMediaFromMobile.asmx/UploadMediaOnFriendsLibrary",
                     //data: "{'id': '" + Id + "'}",
                     data: "{'UserId': '" + userId + "','FileName':'" + MediaName + "','Description':'" + $('#txtDescription').val() + "','Email':'" + Email + "'}",
                     contentType: "application/json; charset=utf-8",
                     dataType: "json",
                     success: function (response) {
-                        alert("success");
+                        //alert("success");
                         if (response != null && response != "") {
                             var prods = response.d;
-                            alert(prods);
+                           // alert(prods);
                             if (prods == "Done") {
                              $("#loader").css("display", "none");
                                 alert("Media Content has been Uploaded successfully.");
@@ -212,9 +212,8 @@
 
             options.params = params; 
 
-
             var ft = new FileTransfer(); 
-             ft.upload(imageURI, "http://iris.reportninja.org/WebServices/UploadMediaMobile.asmx/UploadMedia", win, fail, options, true); 
+              ft.upload(imageURI, "http://iris.reportninja.org/WebServices/UploadMediaMobile.asmx/UploadMedia", win, fail, options, true); 
             //ft.upload(imageURI, encodeURI("http://iris.reportninja.org/WebServices/UploadMediaMobile.asmx/UploadMedia"), win, fail, options);
         } 
 
