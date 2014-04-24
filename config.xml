@@ -16,7 +16,7 @@
   <author href="http://iris.reportninja.org/" email="rizwan.2bv@gmail.com">
     Rizwan Sajid
   </author>
-  <icon src="images/icon.png" gap:role="default" />
+  <icon src="icons/icon.png" gap:role="default" />
   <!--icons -->
   <!-- iphone -->
   <icon src="icons/ios/icon.png" gap:platform="ios" width="57" height="57" />
@@ -34,13 +34,13 @@
   <!--Splash screens -->
   <!-- iphone -->
   <gap:splash src="splash.png" />
-  <gap:splash src="splash/ios/Default.png" width="320" height="480" />
-  <gap:splash src="splash/ios/Default@2x.png" width="640" height="960" />
-  <gap:splash src="splash/ios/Default-Portrait.png" width="768" height="1024" />
-  <gap:splash src="splash/ios/Default-568h.png" width="640" height="1136" />
-  <gap:splash src="splash/ios/Default-Landscape.png" width="1024" height="768" />
-  <gap:splash src="splash/ios/Default-Landscape_at_2x.png" width="2048" height="1496" />
-  <gap:splash src="splash/ios/Default-Portrait_at_2x.png" width="1536" height="2008" />
+  <gap:splash src="splash/ios/Default.jpg" width="320" height="480" />
+  <gap:splash src="splash/ios/Default@2x.jpg" width="640" height="960" />
+  <gap:splash src="splash/ios/Default-Portrait.jpg" width="768" height="1024" />
+  <gap:splash src="splash/ios/Default-568h.jpg" width="640" height="1136" />
+  <gap:splash src="splash/ios/Default-Landscape.jpg" width="1024" height="768" />
+  <gap:splash src="splash/ios/Default-Landscape_at_2x.jpg" width="2048" height="1496" />
+  <gap:splash src="splash/ios/Default-Portrait_at_2x.jpg" width="1536" height="2008" />
 
   <!--Splash ends-->
   <feature name="http://api.phonegap.com/2.7.0/geolocation"/>
@@ -51,7 +51,7 @@
   <feature name="http://api.phonegap.com/2.7.0/media"/>
   <feature name="http://api.phonegap.com/2.7.0/device"/>
 
-  <preference name="orientation" value="portrait" />
+  <!--<preference name="orientation" value="portrait" />-->
 
 
 
