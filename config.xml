@@ -33,8 +33,8 @@
 
   <!--Splash screens -->
   <!-- iphone -->
-  <gap:splash src="splash.png" />
-  <gap:splash src="splash/ios/Default.jpg" width="320" height="480" />
+  <gap:splash src="splash.jpg" />
+  <gap:splash src="splash/ios/Default.png" width="320" height="480" />
   <gap:splash src="splash/ios/Default@2x.jpg" width="640" height="960" />
   <gap:splash src="splash/ios/Default-Portrait.jpg" width="768" height="1024" />
   <gap:splash src="splash/ios/Default-568h.jpg" width="640" height="1136" />
