@@ -16,7 +16,7 @@
   <author href="http://iris.reportninja.org/" email="rizwan.2bv@gmail.com">
     Rizwan Sajid
   </author>
-  <icon src="icons/icon.png" gap:role="default" />
+  <icon src="images/icon.png" gap:role="default" />
   <!--icons -->
   <!-- iphone -->
   <icon src="icons/ios/icon.png" gap:platform="ios" width="57" height="57" />
