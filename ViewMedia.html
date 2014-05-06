@@ -36,7 +36,7 @@
             window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, function (fileSystem) {
                 fileSystem.root.getFile(localFileName, { create: true, exclusive: false }, function (fileEntry) {
                     var localPath = fileEntry.fullPath;
-                    if (device.platform === "Android" && localPath.indexOf("file://") === 0) {
+                    if (device.platform === "ios" && localPath.indexOf("file://") === 0) {
                         localPath = localPath.substring(7);
                     }
                     var ft = new FileTransfer();
